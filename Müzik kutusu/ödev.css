@@ -1,0 +1,718 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+*{
+    margin:0;
+    padding:0;
+}
+body{
+  display:flex;
+  font-family:Verdana;
+}
+.sidebar{
+  width:250px;
+  background:#000000;
+  height:1000px;
+  align-items:center;
+  text-align:center;
+}
+.content{
+  flex:1;
+  background:#ecf0f5;
+}
+
+.sidebar .status{
+  display:flex;
+  color:#708090;
+  font-size:12px;
+}
+
+.sidebar .status .info{
+  display:flex;
+  flex-direction:column;
+  margin-top:20px;
+  margin-left:100px;
+  font-size:18px;
+  margin-bottom:15px;
+  align-items:center;
+}
+
+.sidebar .searchDiv{
+  /*yanyana yazdırıyor*/
+  display:flex;
+  /*ortala işlemi*/
+  align-items:center;
+  justify-content:center;
+}
+.sidebar .search{
+  width:220px;
+  height:30px;
+  border-radius:5px;
+  background:#fff;
+  border:0;
+  font-size:12px;
+  color:#708090;
+  padding-left:10px;
+  box-sizing:border-box;
+  margin-top:10px;
+}
+.fa-search{
+  color:#000;
+  padding-top:10px;
+  position:absolute;
+  padding-left:200px;
+  font-size:12px;
+}
+.sidebar .anasayf{
+  width:100%;
+  height:20px;
+  background:#0000;
+  color:#999;
+  font-size:10px;
+  display:flex;
+  align-items:center;
+  padding-left:15px;
+}
+.sidebar .grafik{
+	background:black;
+	display:flex;
+	position:absolute;
+	margin-top:730px;
+	margin-left:15px;
+}
+.sidebar .ana{
+  background:#0000;
+  width:100%;
+  height:40px;
+  color:#808080;
+  padding:15px;
+  box-sizing:border-box;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  font-size:12px;
+}
+.sidebar .ana span{
+  position:absolute;
+  padding-left:100px;
+  padding-top:10px;
+  font-size:20px;
+  font-weight: bold;
+  
+}
+.sidebar  .ana .fa-home{
+	font-size:40px;
+	padding-left:40px;
+}
+.sidebar .gözat{
+  width:100%;
+  height:50px;
+  background:#000;
+  color:#fff;
+  display:flex;
+  justify-content:space-between;
+  box-sizing:border-box;
+  align-items:center;
+  font-size:20px;
+}
+.fa-compact-disc{
+     padding-left:60px;
+     font-size:40px;  
+	 color:#808080;
+}
+.sidebar .gözat span{
+  padding-left:15px;
+  font-weight: bold;
+  padding-right:70px;
+  color:#808080;
+}
+
+.sidebar .kitap{
+  width:100%;
+  height:200px;
+  color:#fff;
+  font-size:12px;
+  background:#000;
+  display:flex;
+  margin-left:15px;
+  margin-top:20px;
+
+}
+.sidebar .kitap span{
+  padding-left:10px;
+  padding-top:5px;
+  font-weight:bold;
+  font-size:10px;
+}
+.sidebar .kitap .fa-file-audio{
+     font-size:20px;
+	 color:#808080;
+}
+.sidebar .kitap .fa-chevron-up{
+	padding-left:200px;
+	position:absolute;
+	padding-top:5px;
+}
+.sidebar .kitap .seniniçin{
+	width:220px;
+	height:120px;
+	position:absolute;
+	margin-top:30px;
+	background:#C71585;
+}
+.sidebar .kitap .seniniçin .fa-sort-amount-down{
+	position:absolute;
+	display:flex;
+	padding-left:168px;
+	padding-top:70px;
+	font-size:50px;
+}
+.sidebar .kitap .seniniçin span{
+  padding-right:100px;
+  padding-left:25px;
+  padding-top:10px;
+  font-weight:bold;
+  font-size:12px;
+  color:#fff;
+  display:flex;
+}
+.sidebar .kitap .seniniçin .secenek {
+	display:flex;
+}
+.sidebar .kitap .seniniçin .secenek .fa-heart{
+	padding-right:200px;
+	padding-top:15px;
+	padding-left:15px;
+	display:flex;
+	position:absolute;
+}
+.sidebar .kitap .seniniçin .fa-music{
+	padding-right:200px;
+	padding-top:10px;
+	padding-left:15px;
+	display:flex;
+	position:absolute;
+}
+.sidebar .kitap .seniniçin .spn2{
+	padding-left:40px;
+}
+.sidebar .kitap .seniniçin .spn3{
+	padding-left:40px;
+	position:absolute;
+}
+.sidebar .kitap .seniniçin .fa-ellipsis-v{
+	padding-right:200px;
+	padding-top:10px;
+	padding-left:15px;
+	display:flex;
+	position:absolute;
+}
+.sidebar .kitap .seniniçin .albüm{
+	padding-left:40px;
+	padding-top:35px;
+	position:absolute;
+}
+.sidebar .kitap .seniniçin .fa-record-vinyl{
+	padding-right:200px;
+	padding-top:35px;
+	padding-left:15px;
+	display:flex;
+	position:absolute;
+}
+
+
+.sidebar .liste{
+  width:200px;
+  height:40px;
+  color:#fff;
+  background:#000;
+  font-size:12px;
+  display:flex;
+  margin-left:15px;
+  position:absolute;
+
+}
+.sidebar .liste span{
+  padding-left:15px;
+  font-size:15px;
+  padding-top:5px;
+}
+.sidebar .liste .fa-plus-square{
+	padding-left:10px;
+	font-size:20px;
+}
+
+
+.sidebar .duman{
+  width:250px;
+  height:150px;
+  color:#fff;
+  background:#000;
+  align-items:center;
+  display:flex;
+  margin-left:15px;
+  padding-top:10px;
+}
+.sidebar .duman span{
+	position:absolute;
+	display:flex;
+	padding-bottom:50px;
+	font-weight:bold;
+}
+.sidebar .duman img{
+      padding-top:200px;
+}
+
+.content{
+	display:flex;
+	flex-direction:column;
+	background:#1e282c;
+}
+
+.content .başlık{
+	width:100%;
+	height:50px;
+	background:#000;
+	display:flex;
+	align-items:center;
+	padding-left:20px;
+	box-sizing:border-box;
+	color:#4F7942;
+	justify-content:space-between;
+}
+.content .başlık .parça{
+	font-weight:bold;
+	font-size:10px;
+	padding-bottom:20px;
+	padding-left:15px;
+	color:#fff
+}
+.content .başlık .sanatçı{
+	font-weight:bold;
+	font-size:10px;
+	padding-top:20px;
+	display:flex;
+	padding-left:15px;
+	position:absolute;
+	color:#fff
+}
+.content .başlık .fa-play-circle{
+	padding-left:180px;
+	font-size:30px;
+	color:#fff;
+}
+.content .başlık .fa-angle-double-right{
+	padding-left:560px;
+	font-size:30px;
+	color:#fff;
+	position:absolute;
+}
+.content .başlık .fa-angle-double-left{
+	padding-left:410px;
+	font-size:30px;
+	color:#fff;
+	position:absolute;
+}
+.content .başlık .fa-volume-down{
+	padding-left:620px;
+	font-size:20px;
+	color:#fff;
+	position:absolute;
+}
+
+.content .başlık .fa-mixer{
+	padding-left:350px;
+	font-size:20px;
+	color:#fff;
+	position:absolute;
+}
+
+
+.content .main{
+	width:100%;
+	height:1000px;
+	background:#ecf0f5;
+}
+
+.content .başlık .not{
+	width:100px;
+	padding:20px;
+	display:flex;
+	justify-content:space-between;
+}
+.content .başlık .not .zaman{
+  width:300px;
+  height:5px;
+  border-radius:5px;
+  background:#fff;
+  border:0;
+  font-size:12px;  
+  padding-left:150px;
+  box-sizing:border-box;
+  position:abolute;
+}
+
+.content .başlık .not .zaman1{
+  width:208px;
+  height:5px;
+  position:absolute;
+  border-radius:5px;
+  background:#FF1493;
+  border:0;
+  font-size:12px;  
+  padding-left:150px;
+  box-sizing:border-box;
+  position:abolute;
+}
+
+.content .başlık .süre{
+	padding:20px;
+	width:110px;
+	display:flex;
+	color:#fff;
+	justify-content:space-between;
+	align-items:center;
+	font-size:12px;
+}
+
+
+.content .ekran .yazı{
+	display:flex;
+	width:100%;
+	align-items:center;
+	justify-content:space-between;
+	padding:20px;
+	box-sizing:border-box;
+}
+.content .ekran .yazı .dash{
+	font-size:18px;
+	font-weight:bold;
+	color:#fff;
+}
+
+
+.content .boxes .box1{
+	padding-left:40px;
+}
+.content .boxes .box1 .darmaduman,.duman2,.duman3,.duman4{
+	position:absolute;
+	display:flex;
+	font-weight:bold;
+	color:#fff;
+	
+}
+.content .boxes .box1 .tarih,.tarih2,.tarih3,.tarih4{
+	font-weight:bold;
+	position:absolute;
+	display:flex;
+	padding-top:28px;
+	font-size:16px;
+	color:#fff
+}
+
+.content .boxes .box2{
+	display: inline-block;
+	padding-left:50px;
+}
+ 
+.content .boxes .box3{
+	display: inline-block;
+	padding-left:50px;
+}
+
+.content .boxes .box4{
+	display: inline-block;
+	padding-left:50px;
+}
+
+.content .müzik{
+	background:#000;
+	width:1200px;
+	height:460px;
+	position:absolute;
+	margin-top:100px;
+    display:flex;
+}
+
+.content .müzik .bir{
+	color:#757575;
+	padding:40px;
+	font-size:15px;
+	position:absolute;
+    border-style:solid;
+    border-width:1px;
+	width:1120px;
+	height:0px;
+	border-left:0px;
+	border-right:0px;
+	border-top:0px;
+
+
+}
+.content .müzik .fa-play-circle{
+	color:#757575;
+	padding-left:65px;
+	padding-top:40px;
+}
+
+.content .müzik span{
+	color:#757575;
+	position:absolute;
+	padding-left:1080px;
+	padding-top:33px;
+
+}
+.content .müzik .fa-barcode{
+	color:#757575;
+	font-size:20px;
+	padding-left:1070px;
+	padding-top:31px;
+}
+
+.content .iki {
+	color:#757575;
+	padding:40px;
+	padding-top:210px;
+	font-size:15px;
+	position:absolute;
+    border-style:solid;
+    border-width:1px;
+	width:1120px;
+	height:0px;
+	border-left:0px;
+	border-right:0px;
+	border-top:0px;
+
+}
+.content .iki span{
+	color:#757575;
+	position:absolute;
+	display:flex;
+
+}
+.content .iki .vakit{
+	position:absolute;
+	padding-left:1040px;
+}
+.content .iki .fa-play-circle{
+	color:#757575;
+	position:absolute;
+    margin-bottom:20px;
+	padding-left:28px;
+}
+.content .iki .fa-barcode{
+	color:#757575;
+	font-size:20px;
+	padding-left:1110px;
+	position:absolute;
+
+}
+.content .üç {
+	color:#757575;
+	padding:40px;
+	padding-top:280px;
+	font-size:15px;
+	position:absolute;
+    border-style:solid;
+    border-width:1px;
+	width:1120px;
+	height:0px;
+	border-left:0px;
+	border-right:0px;
+	border-top:0px;
+}
+.content .üç .fa-barcode{
+	color:#757575;
+	font-size:20px;
+	padding-left:1110px;
+	position:absolute;
+
+}
+.content .üç .vakit1{
+	position:absolute;
+	padding-left:1040px;
+}
+.content .üç span{
+	color:#757575;
+	position:absolute;
+	display:flex;
+
+}
+.content .üç .fa-redo-alt{
+	color:#757575;
+	position:absolute;
+    margin-bottom:20px;
+	padding-left:28px;
+}
+
+.content .dört {
+	color:#757575;
+	padding:40px;
+	padding-top:350px;
+	font-size:15px;
+	position:absolute;
+    border-style:solid;
+    border-width:1px;
+	width:1120px;
+	height:0px;
+	border-left:0px;
+	border-right:0px;
+	border-top:0px;
+}
+.content .dört .fa-barcode{
+	color:#757575;
+	font-size:20px;
+	padding-left:1110px;
+	position:absolute;
+
+}
+.content .dört .vakit2{
+	position:absolute;
+	padding-left:1040px;
+}
+.content .dört span{
+	color:#757575;
+	position:absolute;
+	display:flex;
+
+}
+.content .dört .fa-play-circle{
+	color:#757575;
+	position:absolute;
+    margin-bottom:20px;
+	padding-left:28px;
+}
+.content .beş {
+	color:#757575;
+	padding:40px;
+	padding-top:420px;
+	font-size:15px;
+	position:absolute;
+    border-style:solid;
+    border-width:1px;
+	width:1120px;
+	height:0px;
+	border-left:0px;
+	border-right:0px;
+	border-top:0px;
+}
+.content .beş .fa-barcode{
+	color:#757575;
+	font-size:20px;
+	padding-left:1110px;
+	position:absolute;
+
+}
+.content .beş .vakit3{
+	position:absolute;
+	padding-left:1040px;
+}
+.content .beş span{
+	color:#757575;
+	position:absolute;
+	display:flex;
+
+}
+.content .beş .fa-play-circle{
+	color:#757575;
+	position:absolute;
+    margin-bottom:20px;
+	padding-left:28px;
+}
+
+.content .altı {
+	color:#757575;
+	padding:40px;
+	padding-top:490px;
+	font-size:15px;
+	position:absolute;
+    border-style:solid;
+    border-width:1px;
+	width:1120px;
+	height:0px;
+	border-left:0px;
+	border-right:0px;
+	border-top:0px;
+}
+.content .altı .fa-barcode{
+	color:#757575;
+	font-size:20px;
+	padding-left:1110px;
+	position:absolute;
+
+}
+.content .altı .vakit4{
+	position:absolute;
+	padding-left:1040px;
+}
+.content .altı span{
+	color:#757575;
+	position:absolute;
+	display:flex;
+
+}
+.content .altı .fa-play-circle{
+	color:#757575;
+	position:absolute;
+    margin-bottom:20px;
+	padding-left:28px;
+}
+.content .reklam{
+	width:550px;
+	height:50px;
+	display:flex;
+	color:black;
+	position:absolute;
+	margin-top:600px;
+	background:#fff;
+}
+.content .reklam2{
+	width:600px;
+	height:50px;
+	display:flex;
+	color:black;
+	position:absolute;
+	margin-top:600px;
+	background:#fff;
+	margin-left:600px;
+}

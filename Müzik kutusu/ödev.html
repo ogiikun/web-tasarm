@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Müzik Bulutu</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Kafa dağıtabileceğiniz bir yer.">
+  <meta name="keyword" content="müzik,şarkı,duman">
+
+  <link href="C:\Users\FooFoo'\Desktop\OGİ\DERSLER\web tasarımı hafta9 dashboard\ödev.css"rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js">
+  </script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Duman',     11],
+          ['Şebnem Ferah',      2],
+          ['Dolu kadehi ters tut',  2],
+          ['Adamlar', 2],
+          ['Manga',    7]
+        ]);
+
+        var options = {
+          title: 'En çok dinlenenler',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+<body>
+  <div class="sidebar">
+  
+  <div class="grafik">
+	   <div id="piechart_3d" style="width: 220px; height: 210px;"></div></div>
+	   
+    <div class="status">
+      <div class="info">
+        <i class="fas fa-sliders-h"></i>
+      </div>
+    </div>
+    
+	<div class="searchDiv">
+    <input class="search" type="text" placeHolder="Sanatçı Ara...">
+      <i class="fas fa-search"></i>
+    </div>
+    
+	<div class="anasayf"></div>
+    <div class="ana">
+      <i class="fas fa-home"></i>
+      <span>Giriş</span>
+    </div>
+
+    <div class="gözat">
+      <i class="fas fa-compact-disc"></i>
+      <span>Gözat</span>
+    </div>
+    
+	<div class="kitap">
+	  <i class="fas fa-chevron-up"></i>
+      <i class="far fa-file-audio"></i>
+      <span>K İ T A P L I Ğ I N</span>
+	  <div class="seniniçin">
+         <i class="fas fa-sort-amount-down"></i>	  
+	    <div class="secenek">
+	  <span>Beğenilen şarkılar</span>
+	  <i class="far fa-heart"></i>
+	  </div>
+	  <i class="fas fa-music"></i>
+	  <span class="spn2">Sanatçılar</span>
+	  <span class="spn3">Listeler</span>
+	  <i class="fas fa-ellipsis-v"></i>
+	  <span class="albüm">Albümler</span>
+	  <i class="fas fa-record-vinyl"></i>
+	  </div>
+    </div>
+    
+	<div class="liste">
+      <i class="far fa-plus-square"></i>
+      <span>Yeni Çalma Listesi</span>
+    </div>
+
+    <div class="duman">
+	<span>Çalınan Albüm:</span>
+      <img src="https://pbs.twimg.com/media/D87lPleXUAAYaab.jpg" width="220px" height="220px">
+    </div>
+  </div>
+  
+  
+    <div class="content">
+	   <div class="başlık">
+	   <span class="parça">Hayatı Yaşa</span>
+	   <span class="sanatçı">Duman</span>
+	   <i class="fas fa-volume-down"></i>
+	   <i class="fas fa-angle-double-left"></i>
+	   <i class="far fa-play-circle"></i>
+	   <i class="fas fa-angle-double-right"></i>
+	   <i class="fab fa-mixer"></i>
+	   <div class="not">
+	   <input class="zaman" type="text" placeHolder="...">
+	   <input class="zaman1" type="text" placeHolder="...">
+	   </div>
+	   <div class="süre">	
+        <span>2:53</span>	   
+</div>
+	   </div>
+
+	   <div class="ekran">
+	   <div class="yazı">
+	   <div>
+	   <span class="dash">Diğer DUMAN Albümleri:</span>
+	   </div>
+	  
+	   </div> 
+	   <div class="boxes">
+	     <div class="box1">
+		  <img src="https://static.qobuz.com/images/covers/25/18/8697406641825_600.jpg" width="220px" height="220px">
+		  <span class="darmaduman">Darmaduman</span>
+		  <span class="tarih">2013</span>
+		  
+		    <div class="box2">
+			   <img src="https://upload.wikimedia.org/wikipedia/tr/b/b3/Duman2.jpg" width="220px" height="220px">
+		          <span class="duman2">Duman 2</span>
+		           <span class="tarih2">2010</span>
+				  
+		  <div class="box3">
+		      <img src="https://s.mxmcdn.net/images-storage/albums/4/6/9/3/1/3/32313964_800_800.jpg" width="220px" height="220px">
+		          <span class="duman3">Duman 1</span>
+		           <span class="tarih3">2010</span>
+				   
+		   <div class="box4">
+		   <img src="https://www.yeniyeniseyler.com/wp-content/uploads/2016/12/Duman-Belki-Al%C4%B1%C5%9Fman-Laz%C4%B1m.jpg" width="220px" height="220px">
+		          <span class="duman4">Belki Alışman Lazım</span>
+		           <span class="tarih4">2002</span>
+			  </div>
+			</div>
+	   </div>
+   
+   <div class="müzik">
+	  <span class="bir">1&emsp;&emsp;&emsp;Köprüaltı</span>
+	  <i class="fas fa-play-circle"></i>
+	  <span>4:52</span> 
+	  <i class="fas fa-barcode"></i>
+	  </div>
+	        <div class="iki" >
+	        <span>2&emsp;&emsp;&emsp;Bebek</span>
+	        <span class="vakit">3:55</span>
+	        <i class="fas fa-barcode"></i>
+	        <i class="fas fa-play-circle"></i>	   
+	   </div>
+	        <div class="üç" >
+	        <span>3&emsp;&emsp;&emsp;Hayatı Yaşa</span>
+	        <span class="vakit1">3:56</span>
+	        <i class="fas fa-barcode"></i>
+            <i class="fas fa-redo-alt"></i>
+	   </div>
+           <div class="dört" >
+	         <span>4&emsp;&emsp;&emsp;Yalnızlık Paylaşılmaz</span>
+	         <span class="vakit2">4:58</span>
+	         <i class="fas fa-barcode"></i>
+	         <i class="fas fa-play-circle"></i>
+             </div>	
+            <div class="beş" >
+	         <span>5&emsp;&emsp;&emsp;Dağlar Bağlar</span>
+	         <span class="vakit3">3:09</span>
+	         <i class="fas fa-barcode"></i>
+	         <i class="fas fa-play-circle"></i>
+          </div>	
+		     <div class="altı" >
+	         <span>6&emsp;&emsp;&emsp;Senin Gibi</span>
+	         <span class="vakit4">4:47</span>
+	         <i class="fas fa-barcode"></i>
+	         <i class="fas fa-play-circle"></i>
+          </div>
+     
+	 <div class="reklam">
+	<span>Reklam alanı</span>
+	</div>
+    <div class="reklam2">
+	<span>Reklam alanı</span>
+	</div>
+</div>	 
+	
+	</div>
+</body>
+</html>
