@@ -1,0 +1,792 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+*{
+    margin:0;
+    padding:0;
+}
+body{
+  display:flex;
+  font-family:Verdana;
+}
+
+.sidebar{
+	background:#394958;
+	width:250px;
+	height:750px;
+	margin-top:50px;
+	display:flex;
+    position:absolute;
+}
+.sidebar .app{
+	color:#fff;
+	width:250px;
+	height:50px;
+    border-style:dashed;
+	border-width:1px;
+}
+.sidebar .app span{
+	padding-left:40px;
+    padding-top:16px;
+	display:flex;
+	position:absolute;
+	font-size:15px;
+}
+.sidebar .app .fa-codepen{
+	color:#fff;
+	display:flex;
+	padding-left:15px;
+	padding-top:15px;
+	position:absolute;
+}
+.sidebar .services{
+	color:#fff;
+	width:250px;
+	height:50px;
+	margin-top:50px;
+	padding-right:250px;
+	position:absolute;
+}
+.sidebar .services span{
+	padding-left:40px;
+    padding-top:16px;
+	display:flex;
+	position:absolute;
+	font-size:15px;
+}
+.sidebar .services .fa-puzzle-piece{
+	color:#fff;
+	display:flex;
+    padding-top:13px;
+	padding-left:15px;
+	position:absolute;
+}
+.sidebar .services .fa-chevron-down{
+	color:#fff;
+	display:flex;
+	padding-left:220px;
+	padding-top:15px;
+}
+.sidebar .services .ser1{
+	background:#496b8a;
+	width:250px;
+	height:50px;
+	margin-top:15px;
+}
+.sidebar .services .ser1 span{
+	padding-left:40px;
+	font-size:14px;
+}
+.sidebar .services .ser2 span{
+	font-size:14px;
+}
+.sidebar .services .user span{
+	padding-top:56px;
+	font-size:14px;
+}
+.sidebar .sap{
+	padding-top:75px;
+
+}
+.sidebar .sap span{
+    border-style:solid;
+	border-width:1px;
+	width:208px;
+	height:30px;
+	border-color:#496b8a;
+}
+.sidebar .sap .fa-boxes{
+	padding-top:15px;
+	padding-left:15px;
+}
+.sidebar .sap .fa-chevron-right{
+	padding-left:185px;
+}
+.sidebar .portal{
+	padding-top:15px;
+}
+.sidebar .portal span{
+	border-style:solid;
+	border-width:1px;
+	border-top:0px;
+	width:208px;
+	height:30px;
+	border-color:#496b8a;
+}
+.sidebar .portal .fa-border-all{
+	padding-top:15px;
+	padding-left:15px;
+}
+.sidebar .routes{
+	padding-top:15px;
+}
+.sidebar .routes span{
+	border-style:solid;
+	border-width:1px;
+	border-top:0px;
+	width:208px;
+	height:30px;
+	border-color:#496b8a;
+}
+.sidebar .routes .fa-bullseye{
+	padding-top:15px;
+	padding-left:15px;
+}
+.sidebar .sgroups{
+	padding-top:15px;
+}
+.sidebar .sgroups span{
+	border-style:solid;
+	border-width:1px;
+	border-top:0px;
+	width:208px;
+	height:30px;
+	border-color:#496b8a;
+}
+.sidebar .sgroups .fa-user-lock{
+	padding-top:15px;
+	padding-left:15px;
+}
+.sidebar .events{
+	padding-top:15px;
+}
+.sidebar .events span{
+	border-style:solid;
+	border-width:1px;
+	border-top:0px;
+	width:208px;
+	height:30px;
+	border-color:#496b8a;
+}
+.sidebar .events .fa-calendar-week{
+	padding-top:15px;
+	padding-left:15px;
+}
+.sidebar .members{
+	padding-top:15px;
+}
+.sidebar .members span{
+	border-style:solid;
+	border-width:1px;
+	border-top:0px;
+	width:208px;
+	height:30px;
+	border-color:#496b8a;
+}
+.sidebar .members .fa-user{
+	padding-top:15px;
+	padding-left:15px;
+}
+.sidebar .use{
+	padding-top:100px;
+
+}
+.sidebar .use span{
+	border-style:solid;
+	border-width:1px;
+    border-top-width:4px;
+	border-bottom-width:0px;
+	width:208px;
+	height:30px;
+	border-color:#4c6ef5;
+}
+.sidebar .use .fa-question-circle{
+	padding-top:15px;
+	padding-left:15px;
+}
+.sidebar .legal{
+	padding-top:20px;
+}
+.sidebar .legal span{
+	border-style:solid;
+	border-width:1px;
+	width:208px;
+	height:30px;
+	border-color:#496b8a;
+}
+.sidebar .legal .fa-balance-scale{
+	padding-top:15px;
+	padding-left:15px;
+}
+
+
+.content{
+    display:flex;
+	flex-direction:column;
+}
+.content .üst{
+    width:100%;
+	height:50px;
+	background:#1e282c;
+	display:flex;
+	align-items:center;
+	box-sizing:border-box;
+	color:#fff;
+}
+.content .üst h1{
+	font-weight: bold;
+	font-size:25px;
+	padding-left:55px;
+	position:absolute;
+}
+.content .üst .fa-bars{
+	padding-left:20px;
+	font-size:20px;
+
+}
+.content .üst span{
+	padding-left:80px;
+    font-size:18px;
+}
+.content .üst .isim span{
+	font-size:12px;
+	padding-left:1050px;
+	position:absolute;
+}
+.content .üst .isim .fa-chevron-down{
+	padding-left:1115px;
+    font-size:14px;
+	position:absolute;
+}
+.content .üst .isim .fa-newspaper{
+	padding-left:1010px;
+	position:absolute;
+	font-size:14px;
+}
+.content .üst .isim .fa-business-time{
+    padding-left:970px;
+	font-size:14px;
+	padding-bottom:1px;
+	position:absolute;
+}
+
+.content .üst .value span{
+    background:green;
+	height:18px;
+	border-radius:15px;
+	font-size:10px;
+    margin-left:980px;
+	padding-bottom:5px;
+    padding-left:4px;
+	position:abolute;
+}
+
+.content .orta .başlık span{
+	padding-left:300px;
+	font-size:13px;
+	color:#4c6ef5;
+	position:absolute;
+	padding-top:10px;
+}
+.content .orta .başlık  .fa-home{
+    padding-left:267px;
+	padding-top:8px;
+    color:#4c6ef5;
+}
+.content .orta .başlık  .fa-globe{
+    padding-left:200px;
+	padding-top:8px;
+    color:#4c6ef5;
+}
+.content .orta .başlık .fa-id-badge{
+    padding-left:140px;
+	padding-top:8px;
+    color:#4c6ef5;
+}
+.content .orta .başlık  .fa-network-wired{
+    padding-left:135px;
+	padding-top:8px;
+    color:#4c6ef5;
+	font-size:13px;
+}
+.content .orta .başlık  .fa-calendar-minus{
+    padding-left:50px;
+	padding-top:8px;
+    color:#4c6ef5;
+}
+.content .orta .space h1{
+	padding-left:320px;
+	position:absolute;
+	padding-top:35px;
+	font-size:20px;
+}
+.content .orta .space span{
+	padding-left:280px;
+	font-size:10px;
+	position:absolute;
+	padding-top:70px;
+}
+.content .orta .space .fa-puzzle-piece{
+	padding-left:280px;
+	padding-top:35px;
+	font-size:20px;
+}
+.content .orta .space .fa-question-circle{
+	padding-left:1430px;
+	font-size:15px;
+	color:#4c6ef5;
+}
+.content .orta .searchdiv{
+	display:flex;
+	align-items:center;
+    justify-content:center;
+}
+.content .orta .search{
+    width:220px;
+    height:25px;
+    color:#000; 
+    font-style:italic;
+    border:1;
+    font-size:12px;
+    margin-left:1200px;
+    box-sizing:border-box;
+    margin-top:60px;
+}
+.content .orta .kutu{
+	width:100%;
+	height:550px;
+	margin-top:20px;
+	background:#fafafa;
+    display:flex;
+
+}
+.content .orta .kutu .apı{
+	width:350px;
+	height:170px;
+    background:#fff;
+	margin-left:270px;
+    margin-top:20px;
+
+}
+.content .orta .kutu .apı h1{
+	padding-top:10px;
+	padding-left:35px;
+	color:#4c6ef5;
+	position:absolute;
+}
+.content .orta .kutu .apı .fa-puzzle-piece{
+	color:#4c6ef5;
+	padding-top:10px;
+	padding-left:10px;
+}
+.content .orta .kutu .apı h2{
+	padding-top:20px;
+	padding-left:5px;
+	display:flex;
+	font-size:13px; 
+	position:absolute;
+}
+.content .orta .kutu .apı .yazı{
+	width:250px;
+    position:absolute;
+	margin-left:100px;
+	margin-top:40px;
+}
+.content .orta .kutu .apı .yazı span{
+	font-size:13px;
+}
+.content .orta .kutu .apı .fa-globe{
+	font-size:30px;
+	padding-top:80px;
+	position:absolute;
+	color:#4c6ef5;
+}
+.content .orta .kutu .auto{
+	width:350px;
+	height:170px;
+    background:#fff;
+	margin-left:20px;
+    margin-top:20px;
+}
+.content .orta .kutu .auto h1{
+	padding-top:10px;
+	padding-left:35px;
+	color:#4c6ef5;
+	position:absolute;
+}
+.content .orta .kutu .auto .fa-puzzle-piece{
+	color:#4c6ef5;
+	padding-top:10px;
+	padding-left:10px;
+}
+.content .orta .kutu .auto h2{
+	padding-top:20px;
+	padding-left:5px;
+	display:flex;
+	font-size:13px; 
+	position:absolute;
+}
+.content .orta .kutu .auto .fa-external-link-alt{
+	font-size:30px;
+	padding-top:80px;
+	position:absolute;
+	color:#4c6ef5;
+}
+.content .orta .kutu .auto .sc{
+	width:250px;
+    position:absolute;
+	margin-left:100px;
+	margin-top:40px;
+}
+.content .orta .kutu .auto .sc span{
+	font-size:13px;
+}
+
+.content .orta .kutu .log{
+	width:350px;
+	height:170px;
+    background:#fff;
+	margin-left:20px;
+    margin-top:20px;
+}
+.content .orta .kutu .log h1{
+	padding-top:10px;
+	padding-left:35px;
+	color:#4c6ef5;
+	position:absolute;
+}
+.content .orta .kutu .log .fa-puzzle-piece{
+	color:#4c6ef5;
+	padding-top:10px;
+	padding-left:10px;
+}
+.content .orta .kutu .log h2{
+	padding-top:20px;
+	padding-left:5px;
+	display:flex;
+	font-size:13px; 
+	position:absolute;
+}
+.content .orta .kutu .log .fa-edit{
+	font-size:30px;
+	padding-top:70px;
+	position:absolute;
+	color:gray;
+}
+.content .orta .kutu .log .fa-chart-bar{
+	font-size:30px;
+	padding-top:100px;
+	padding-left:20px;
+	position:absolute;
+	color:#4c6ef5;
+}
+.content .orta .kutu .log .al{
+	width:250px;
+    position:absolute;
+	margin-left:100px;
+	margin-top:40px;
+}
+.content .orta .kutu .log .al span{
+	font-size:13px;
+}
+
+.content .orta .kutu .trust{
+	width:350px;
+	height:170px;
+    background:#fff;
+    margin-left:270px;
+	margin-top:200px;
+	position:absolute;
+}
+.content .orta .kutu .trust h1{
+	padding-top:10px;
+	padding-left:35px;
+	color:#4c6ef5;
+	position:absolute;
+}
+.content .orta .kutu .trust .fa-puzzle-piece{
+	color:#4c6ef5;
+	padding-top:10px;
+	padding-left:10px;
+}
+.content .orta .kutu .trust h2{
+	padding-top:20px;
+	padding-left:5px;
+	display:flex;
+	font-size:13px; 
+	position:absolute;
+}
+.content .orta .kutu .trust .fa-user-lock{
+	font-size:30px;
+	padding-top:80px;
+	position:absolute;
+	color:#4c6ef5;
+}
+.content .orta .kutu .trust .at{
+	width:250px;
+    position:absolute;
+	margin-left:100px;
+	margin-top:40px;
+}
+.content .orta .kutu .trust .at span{
+	font-size:13px;
+}
+
+.content .orta .kutu .rules{
+	width:350px;
+	height:170px;
+    background:#fff;
+    margin-left:640px;
+	margin-top:200px;
+	position:absolute;
+}
+.content .orta .kutu .rules h1{
+	padding-top:10px;
+	padding-left:35px;
+	color:#4c6ef5;
+	position:absolute;
+}
+.content .orta .kutu .rules .fa-puzzle-piece{
+	color:#4c6ef5;
+	padding-top:10px;
+	padding-left:10px;
+}
+.content .orta .kutu .rules h2{
+	padding-top:20px;
+	padding-left:5px;
+	display:flex;
+	font-size:13px; 
+	position:absolute;
+}
+.content .orta .kutu .rules .simge .fa-puzzle-piece{
+	position:absolute;
+	color:#000;
+	margin-top:40px;
+	font-size:30px;
+	margin-left:20px;
+}
+.content .orta .kutu .rules .br{
+	width:250px;
+    position:absolute;
+	margin-left:100px;
+	margin-top:40px;
+}
+.content .orta .kutu .rules .br span{
+	font-size:13px;
+}
+
+.content .orta .kutu .connect{
+	width:350px;
+	height:170px;
+    background:#fff;
+    margin-left:1010px;
+	margin-top:200px;
+	position:absolute;
+}
+.content .orta .kutu .connect h1{
+	padding-top:10px;
+	padding-left:35px;
+	color:#4c6ef5;
+	position:absolute;
+}
+.content .orta .kutu .connect .fa-puzzle-piece{
+	color:#4c6ef5;
+	padding-top:10px;
+	padding-left:10px;
+}
+.content .orta .kutu .connect h2{
+	padding-top:20px;
+	padding-left:5px;
+	display:flex;
+	font-size:13px; 
+	position:absolute;
+}
+.content .orta .kutu .connect .resim .fa-puzzle-piece{
+	position:absolute;
+	color:#000;
+	margin-top:40px;
+	font-size:30px;
+	margin-left:20px;
+}
+.content .orta .kutu .connect .con{
+	width:250px;
+    position:absolute;
+	margin-left:100px;
+	margin-top:40px;
+}
+.content .orta .kutu .connect .con span{
+	font-size:13px;
+}
+
+.content .orta .kutu .dest{
+	width:350px;
+	height:170px;
+    background:#fff;
+    margin-left:270px;
+	margin-top:380px;
+	position:absolute;
+}
+.content .orta .kutu .dest h1{
+	padding-top:10px;
+	padding-left:35px;
+	color:#4c6ef5;
+	position:absolute;
+}
+.content .orta .kutu .dest .fa-puzzle-piece{
+	color:#4c6ef5;
+	padding-top:10px;
+	padding-left:10px;
+}
+.content .orta .kutu .dest h2{
+	padding-top:20px;
+	padding-left:5px;
+	display:flex;
+	font-size:13px; 
+	position:absolute;
+}
+.content .orta .kutu .dest .res .fa-puzzle-piece{
+	position:absolute;
+	color:#000;
+	margin-top:40px;
+	font-size:30px;
+	margin-left:20px;
+}
+.content .orta .kutu .dest .dt{
+	width:250px;
+    position:absolute;
+	margin-left:100px;
+	margin-top:40px;
+}
+.content .orta .kutu .dest .dt span{
+	font-size:13px;
+}
+
+.content .orta .kutu .enter{
+	width:350px;
+	height:170px;
+    background:#fff;
+    margin-left:640px;
+	margin-top:380px;
+	position:absolute;
+}
+.content .orta .kutu .enter h1{
+	padding-top:10px;
+	padding-left:35px;
+	color:#4c6ef5;
+	position:absolute;
+}
+.content .orta .kutu .enter .fa-puzzle-piece{
+	color:#4c6ef5;
+	padding-top:10px;
+	padding-left:10px;
+}
+.content .orta .kutu .enter h2{
+	padding-top:20px;
+	padding-left:5px;
+	display:flex;
+	font-size:13px; 
+	position:absolute;
+}
+.content .orta .kutu .enter .foto .fa-puzzle-piece{
+	position:absolute;
+	color:#000;
+	margin-top:40px;
+	font-size:30px;
+	margin-left:20px;
+}
+.content .orta .kutu .enter .em{
+	width:250px;
+    position:absolute;
+	margin-left:100px;
+	margin-top:40px;
+}
+.content .orta .kutu .enter .em span{
+	font-size:13px;
+}
+
+.content .orta .kutu .flag{
+	width:350px;
+	height:170px;
+    background:#fff;
+    margin-left:1010px;
+	margin-top:380px;
+	position:absolute;
+}
+.content .orta .kutu .flag h1{
+	padding-top:10px;
+	padding-left:35px;
+	color:#4c6ef5;
+	position:absolute;
+}
+.content .orta .kutu .flag .fa-puzzle-piece{
+	color:#4c6ef5;
+	padding-top:10px;
+	padding-left:10px;
+}
+.content .orta .kutu .flag h2{
+	padding-top:20px;
+	padding-left:5px;
+	display:flex;
+	font-size:13px; 
+	position:absolute;
+}
+
+.content .orta .kutu .flag .ff{
+	width:250px;
+    position:absolute;
+	margin-left:100px;
+	margin-top:40px;
+}
+.content .orta .kutu .flag .ff span{
+	font-size:13px;
+}
+.content .orta .kutu .flag .buton{
+	background:#4c6ef5;
+	margin-top:55px;
+	margin-left:15px;
+	width:50px;
+	border-radius:20px;
+	height:20px;
+	position:absolute;
+}
+.content .orta .kutu .flag .buton .nokta{
+	background:#5a7a94;
+	width:13px;
+	height:13px;
+	border-radius:25px;
+	margin-left:30px;
+	margin-top:2px;
+	border-style:solid;
+	border-width:1px;
+	border-color:#fff;
+}

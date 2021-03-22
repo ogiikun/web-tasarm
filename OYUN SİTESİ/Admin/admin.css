@@ -1,0 +1,186 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+*{
+    margin:0;
+    padding:0;
+}
+
+.sidebar .oyunbudur {
+	font-family:fantasy;
+	margin-left:40px;
+	margin-top:20px;
+}
+.sidebar .oyunbudur span{
+	font-size:28px;
+	color:#fff;
+}
+.sidebar .anasayf{
+	background:#4f4f4f;
+	margin-top:30px;
+	padding-top:10px;
+	position:absolute;
+	width:300px;
+	height:30px;
+}
+.sidebar .anasayf:hover{
+	background:#908f8f;
+}
+.sidebar #as{
+	color:white;
+	margin-left:90px;
+}
+.fa-home{
+	position:absolute;
+	margin-left:45px;
+	color:white;
+}
+.sidebar .oyunlar{
+	background:#4f4f4f;
+	margin-top:100px;
+	padding-top:10px;
+	position:absolute;
+	width:300px;
+	height:30px;	
+}
+.sidebar .oyunlar:hover{
+	background:#908f8f;
+}
+.sidebar .oyunlar #oyun{
+	color:white;
+	margin-left:90px;
+}
+.fa-chess-rook{
+	position:absolute;
+	margin-left:45px;
+	color:white;	
+}
+.sidebar .enoyun{
+	background:#4f4f4f;
+	margin-top:170px;
+	padding-top:10px;
+	position:absolute;
+	width:300px;
+	height:30px;	
+}
+.sidebar .enoyun:hover{
+	background:#908f8f;
+}
+.sidebar .enoyun #en{
+	color:white;
+	margin-left:90px;
+}
+.fa-gamepad{
+	position:absolute;
+	margin-left:45px;
+	color:white;	
+}
+.sidebar .kullanıcılar{
+	background:#4f4f4f;
+	margin-top:240px;
+	padding-top:10px;
+	position:absolute;
+	width:300px;
+	height:30px;	
+}
+.sidebar .kullanıcılar:hover{
+	background:#908f8f;
+}
+.sidebar .kullanıcılar #kullanıcı{
+	color:white;
+	margin-left:90px;
+}
+.fa-user-astronaut{
+	position:absolute;
+	margin-left:45px;
+	color:white;
+}
+.sidebar .setting{
+	background:#4f4f4f;
+	margin-top:600px;
+	padding-top:10px;
+	position:absolute;
+	width:300px;
+	height:30px;	
+}
+.sidebar .setting:hover{
+	background:#908f8f;
+}
+.sidebar .setting #ayarlar{
+	color:white;
+	margin-left:90px;
+}
+.fa-tools{
+	position:absolute;
+	margin-left:45px;
+	color:white;	
+}
+.sidebar .trafik{
+	background:#4f4f4f;
+	margin-top:320px;
+	padding-top:10px;
+	position:absolute;
+	width:300px;
+	height:30px;	
+}
+.sidebar .trafik:hover{
+	background:#908f8f;
+}
+.sidebar .trafik #tra{
+	color:white;
+	margin-left:90px;
+}
+.fa-traffic-light{
+	position:absolute;
+	margin-left:45px;
+	color:white;
+}
+
+
+.content .anasayfa{
+	margin-left:380px;
+	margin-top:60px;
+	color:black;
+	position:absolute;
+	font-family:Bahnschrift;
+}
